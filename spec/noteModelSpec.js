@@ -1,19 +1,19 @@
+// 
+// var assert = {
+//   isTrue: function(assertionToCheck) {
+//     if (!assertionToCheck) {
+//       throw new Error("Assertion failed: " + assertionToCheck + " is not truthy")
+//     }
+//   }
+// }
 
-var assert = {
-  isTrue: function(assertionToCheck) {
-    if (!assertionToCheck) {
-      throw new Error("Assertion failed: " + assertionToCheck + " is not truthy")
-    }
-  }
-}
-
-function testCircleRadiusDefaultsTo10() {
-  var circle = new Circle();
-
-  assert.isTrue(circle.radius === 10)
-};
-
-testCircleRadiusDefaultsTo10();
+// function testCircleRadiusDefaultsTo10() {
+//   var circle = new Circle();
+//
+//   assert.isTrue(circle.radius === 10)
+// };
+//
+// testCircleRadiusDefaultsTo10();
 //
 // (function(blahblah) {
 //   function testNoteModelInstatiated() {
@@ -34,3 +34,10 @@ function testNoteModelInstatiated() {
 }
 
 testNoteModelInstatiated();
+
+function getText() {
+  var note = new Note("My favourite language is JavaScript");
+  assert.isTrue(note.getText() === "My favourite language is JavaScript")
+}
+
+getText();

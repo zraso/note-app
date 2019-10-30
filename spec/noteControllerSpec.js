@@ -8,6 +8,7 @@ function testNoteControllerInstatiated() {
 }
 
 testNoteControllerInstatiated();
+ID.reset();
 
 function testInsertHTML() {
 
@@ -27,7 +28,8 @@ function testInsertHTML() {
   var controller = new NoteController(list);
   console.log(controller)
   controller.insertHTML(documentDouble);
-  assert.isTrue(documentDouble.getElementById("app").innerHTML === "<ul><li><div>Favourite food: pest</div></li></ul>")
+  assert.isTrue(documentDouble.getElementById("app").innerHTML === "<ul><li><div><a href=#0>Favourite food: pest</a></div></li></ul>")
 }
 
 testInsertHTML();
+ID.reset();

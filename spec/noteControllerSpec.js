@@ -27,7 +27,7 @@ function testInsertHTML() {
   var controller = new NoteController(list);
   console.log(controller)
   controller.insertHTML(documentDouble);
-  assert.isTrue(documentDouble.getElementById("app").innerHTML === "<ul><li><div>Favourite food: pesto</div></li></ul>")
+  assert.isTrue(documentDouble.getElementById("app").innerHTML === "<ul><li><div>Favourite food: pest</div></li></ul>")
 }
 
 testInsertHTML();

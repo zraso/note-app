@@ -9,7 +9,12 @@
   }
 
   function getNote(note) {
-    return note.getText()
+    if (note.getText().length > 20) {
+      return note.getText().substring(0, 20)
+    }
+    else {
+      return note.getText()
+    }
   }
 
   exports.NoteListView = NoteListView;

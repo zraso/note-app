@@ -1,4 +1,4 @@
-// 
+//
 // var assert = {
 //   isTrue: function(assertionToCheck) {
 //     if (!assertionToCheck) {
@@ -35,9 +35,14 @@ function testNoteModelInstatiated() {
 
 testNoteModelInstatiated();
 
-function getText() {
+function testgetText() {
   var note = new Note("My favourite language is JavaScript");
   assert.isTrue(note.getText() === "My favourite language is JavaScript")
 }
 
-getText();
+testgetText();
+
+function testID() {
+  var note = new Note("My favourite language is JavaScript");
+  assert.isTrue(note.id === 0)
+}

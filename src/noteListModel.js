@@ -1,17 +1,23 @@
 (function(exports) {
-  function NoteList(text) {
-    this.list = []
+  function NoteList() {
+    this.notes = []
   }
   //
-  NoteList.prototype.addNote = function(note) {
-    this.list.push(note.getText());
+  NoteList.prototype.addNote = function(string) {
+    note = new Note(string);
+    this.notes.push(note);
   }
 
-  NoteList.prototype.getList = function() {
-    for(let i = 0; i < (this.list.length); i++) {
-      return this.list[i]
-    }
+  NoteList.prototype.allNotes = function() {
+    // for(let i = 0; i < (this.notes.length); i++) {
+      return this.notes
+    // }
   }
+  //
+  // NoteList.prototype.createNote = function(string) {
+  //   note = new Note(string);
+  //   this.addNote(note);
+  // }
 
   exports.NoteList = NoteList;
 })(this);

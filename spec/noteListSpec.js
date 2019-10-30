@@ -8,25 +8,24 @@
 
 function testNoteListInstatiated() {
   var noteList = new NoteList();
-  assert.isTrue(noteList.list.length === 0)
+  assert.isTrue(noteList.notes.length === 0)
 }
 
 testNoteListInstatiated();
 
-function addNote() {
+function testaddNote() {
   var noteList = new NoteList();
   note = new Note("Favourite drink: seltzer");
   noteList.addNote(note)
-  assert.isTrue(noteList.list.length === 1)
+  assert.isTrue(noteList.notes.length === 1)
 }
 
-addNote();
+testaddNote();
 
-function getList() {
+function testgetNotes() {
   var noteList = new NoteList();
-  note = new Note("Favourite drink: seltzer");
-  noteList.addNote(note)
-  assert.isTrue(noteList.getList() === "Favourite drink: seltzer")
+  noteList.addNote("Favourite drink: seltzer");
+  assert.isTrue(noteList.notes[0].getText() === "Favourite drink: seltzer")
 }
 
-getList();
+testgetNotes();

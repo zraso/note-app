@@ -18,11 +18,37 @@ function showNoteHTML(id) {
     .innerHTML = singleView.renderHTML()
 }
 
-function getIDfromURL(location) {
+function getIDfromURL() {
   return window.location.href.split("#")[1];
+  // return window.location.href.split("#")[1];
 }
 
 window.onhashchange = function() {
   id = getIDfromURL()
   showNoteHTML(id)
 }
+
+function clearTextArea() {
+  document.getElementById("note").value = '';
+}
+
+document
+  .getElementById("text")
+  .addEventListener("click", function(clickEvent) {
+    clickEvent.preventDefault()
+    text = clickEvent.path[1][0].value
+    list.addNote(text)
+    controller.insertHTML()
+    clearTextArea()
+    console.log(clickEvent)
+    console.log(clickEvent.path[1][0].value)
+})
+
+document
+  .getElementById("home")
+  .addEventListener("click", function(clickEvent) {
+    clickEvent.preventDefault()
+    controller.insertHTML()
+    console.log(clickEvent)
+    console.log(clickEvent.path[1][0].value)
+})

@@ -2,11 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Notes</title>
   </head>
   <body>
+    <h2>Notes</h2>
     <div id='app'>Hello</div>
-
+    <div>
+      <textarea id="note" form="text"></textarea>
+      <br>
+    </div>
+    <div>
+    <form action='#notes' method='post' id='text'>
+      <input type="submit" value="Submit"/>
+    </form>
+    <form action='#notes' method='post' id='home'>
+      <input type="submit" value="Home"/>
+    </form>
+    </div>
   </body>
   <script src="src/noteListModel.js"></script>
   <script src="src/noteListView.js"></script>

@@ -1,28 +1,6 @@
-
-// console.log(elem)
-//
-// document.addEventListener("DOMContentLoaded", function(event) {
-//   var elem = document.getElementById("app");
-//   console.log(elem);
-// })
-//
-// function changeText(newText) {
-//   document.getElementById("app").innerHTML = "Howdy!";
-// }
-// document.addEventListener("click", changeText);
-// elem.innerHTML = 'Howdy'
-
-
-
-
-
-
-
 (function(exports){
   function NoteController(notelist) {
-    // notelist.addNote("Favourite drink: seltzer");
     var notelist = notelist
-    var blah = 'hello'
     this.notelist = notelist
     this.noteListView = new NoteListView(this.notelist);
 
@@ -57,7 +35,6 @@
         clickEvent.preventDefault()
         text = clickEvent.path[1][0].value
         notelist.addNote(text)
-        console.log(notelist)
         controller.insertHTML()
         clearTextArea()
       });

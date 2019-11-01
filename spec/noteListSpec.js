@@ -1,11 +1,3 @@
-// var noteList;
-// var note;
-//
-// beforeEach(function () {
-//   noteList = new NoteList();
-//   note = new Note("Favourite drink: seltzer");
-// })
-
 function testNoteListInstatiated() {
   var noteList = new NoteList();
   assert.isTrue(noteList.notes.length === 0)

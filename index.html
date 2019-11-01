@@ -8,20 +8,27 @@
     <title>Notes</title>
   </head>
   <body>
-    <div>
-    <h1 id='page-title'>Notes</h1>
-    </div>
-    <div>
-      <textarea rows="5" cols="30" id="note" form="text"></textarea>
-      <br>
-    </div>
-    <div>
-    <form action='#notes' method='post' id='text'>
-      <input class="btn btn-info" type="submit" value="Submit"/>
-    </form>
-    <form action='#notes' method='post' id='home'>
-      <input class="btn btn-info" type="submit" value="Home"/>
-    </form>
+
+    <div class="container">
+      <div class="row">
+        <div class="col"><h1 id='page-title'>Notes</h1></div>
+        <div class="col"></div>
+        <div class="w-100"></div>
+        <div class="col"><textarea rows="5" cols="30" id="note" form="text"></textarea></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <form action='#notes' method='post' id='text'>
+              <input class="btn btn-info" type="submit" value="Submit"/>
+            </form>
+        </div>
+        <div class="col-10">
+          <form action='#notes' method='post' id='home'>
+            <input class="btn btn-info" type="submit" value="Home"/>
+          </form>
+        </div>
+      </div>
     </div>
     <div id='app'></div>
   </body>

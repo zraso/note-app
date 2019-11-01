@@ -7,7 +7,7 @@
     var stringHTML = '<ul>'
 
     this.noteList.allNotes().forEach( function(note) {
-      stringHTML += '<li><div><a href=#' + note.id + ">" + note.getText().substring(0, 20) + '</a></div></li>'
+      stringHTML += '<li><div><a href=#' + note.id + ">" + note.getText().substring(0, 100) + '</a></div></li>'
     })
      return stringHTML + '</ul>'
   }

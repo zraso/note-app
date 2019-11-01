@@ -55,9 +55,9 @@
       .getElementById("text")
       .addEventListener("click", function(clickEvent) {
         clickEvent.preventDefault()
-        note = new Note(clickEvent.path[1][0].value)
-        notelist.addNote(note.text)
-        // var controller = new NoteController(list)
+        text = clickEvent.path[1][0].value
+        notelist.addNote(text)
+        console.log(notelist)
         controller.insertHTML()
         clearTextArea()
       });

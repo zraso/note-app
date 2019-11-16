@@ -1,6 +1,6 @@
 # Notes App
 
-### Summary
+### Summary
 A note-taking single page app (SPA) created with vanilla Javascript and my own testing framework.
 
 ### Objectives
@@ -16,9 +16,9 @@ Develop an application using only pure JavaScript (with the exception of the npm
 
 2. In Terminal, run:
 
-* npm install to install the node packages
-* http-server to boot the local server
+* `npm install` to install the node packages
+* `http-server` to boot the local server
 * Visit the localhost address (e.g. http://localhost:8080)
 
-### Application model
+### Model
 

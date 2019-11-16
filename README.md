@@ -22,4 +22,4 @@ Develop an application using only pure JavaScript (with the exception of the npm
 
 ### Model
 
-![Project model](https://imgur.com/298WUjC)
+![Project model](https://user-images.githubusercontent.com/44139464/68998688-b0fdaa00-08ad-11ea-9fc2-cead83d47b31.jpeg)

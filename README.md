@@ -17,8 +17,9 @@ Develop an application using only pure JavaScript (with the exception of the npm
 2. In Terminal, run:
 
 * `npm install` to install the node packages
-* `http-server` to boot the local server
+* `node node_modules/http-server/bin/http-server` to boot the local server
 * Visit the localhost address (e.g. http://localhost:8080)
 
 ### Model
 
+![Project model](https://imgur.com/298WUjC)
